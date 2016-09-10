@@ -1,0 +1,38 @@
+{
+  "name": "fitkitchen",
+  "version": "1.0.0",
+  "description": "recipe app for for healthy eating ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramos13/Final-Project.git"
+  },
+  "keywords": [
+    "fit",
+    "kitchen",
+    "food",
+    "meals",
+    "diet"
+  ],
+  "author": "Phillip R.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pramos13/Final-Project/issues"
+  },
+  "homepage": "https://github.com/pramos13/Final-Project#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "laravel": "0.0.1",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "path": "^0.12.7",
+    "sequelize": "^3.24.2",
+    "unirest": "^0.5.1"
+  }
+}
