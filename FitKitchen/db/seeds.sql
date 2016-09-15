@@ -1,6 +1,6 @@
 ### Seeds
 
-### The first recipe to enter
+### The first recipes
 INSERT INTO Recipe (Name, Instructions, Cuisine) VALUES ('Turkey Sandwich', 'Take out two pieces of Bread. Spread mayo on one slice and mustard on the other. Add a layer of turkey, cheese, tomatoes, and lettuce.', 'Miscellaneous');
 INSERT INTO Ingredient (Name, Category) VALUES('Turkey', 'Meat'), ('Wheat Bread', 'Bread'), ('Lettuce', 'Vegetable'), ('Tomatoes', 'Vegetable'), ('Mustard', 'Condiment'), ('Mayo', 'Condiment');
 INSERT INTO RecipeIngredient (recipe_id, ingredient_id) VALUES(1, 1);
@@ -11,7 +11,7 @@ INSERT INTO RecipeIngredient (recipe_id, ingredient_id) VALUES(1, 5);
 INSERT INTO RecipeIngredient (recipe_id, ingredient_id) VALUES(1, 6);
 
 
-### The second recipe to enter
+### The second recipes
 INSERT INTO Recipe (Name, Instructions, Cuisine) VALUES ('Tacos', 'Grab a tortilla.  Fill it with chicken, lettuce, cheese, and salsa. Roll up and put in microwave', 'Mexican');
 
 INSERT INTO Ingredient (Name, Category) VALUES('Tortilla', 'Bread'), ('Chicken', 'Meat'), ('Cheese', 'Dairy'), ('Salsa', 'Condiment');
@@ -22,7 +22,7 @@ INSERT INTO RecipeIngredient (recipe_id, ingredient_id) VALUES(2, 10);
 INSERT INTO RecipeIngredient (recipe_id, ingredient_id) VALUES(2, 3);
 
 
-### This will join the tables and list all the recipes with their category
+### This will join the tables and list all the recipes with their categorys
 SELECT r.name AS 'Recipe', 
 
 	r.instructions,

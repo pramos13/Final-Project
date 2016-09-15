@@ -4,15 +4,15 @@
 // Node Package Modules
 
 
-// import Node File System module express 
+// Node File System module express 
 var express = require('express');
-// import Node File System module body-parser 
+// Node File System module body-parser 
 var bodyParser = require('body-parser');
 
-// import Node File System module path 
+// Node File System module path 
 var path = require('path');
 
-// import Node File System module method-override 
+// Node File System module method-override 
 var methodOverride = require('method-override');
 var models = require('./models');
 
@@ -50,11 +50,9 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 app.use(methodOverride('_method'));
 
 // create an instance of express handlebars
-// this allows access to the full API
 var exphbs = require('express-handlebars');
 
 // tell express to use handlebars as a template engine
-// A template engine enables you to use static template files
 app.engine('handlebars', exphbs({
 	defaultLayout: 'main'
 }));

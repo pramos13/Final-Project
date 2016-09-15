@@ -8,9 +8,9 @@ module.exports = function(searchParams)
 // Node Package Modules
 
 
-// import Node File System module express 
+// Node File System module express 
 var express = require('express');
-// import Node File System module body-parser 
+// Node File System module body-parser 
 var bodyParser = require('body-parser');
 
 var models = require('./models');
@@ -99,7 +99,7 @@ function processAllRecipes(recipes){
             recipeID = recipes[j].id;
 
 
-    //search by recipeID and find the recipe information
+    //search by recipeID and find the recipe information from spoonacular
             unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/" + recipeID + "/information?includeNutrition=false")
             .header("X-Mashape-Key", "1pb1awVrWQmsh5cGX7uf2JqubVkIp1ibFl8jsnOPSRyTSkfXtR")
             .end(function (result) {
@@ -200,7 +200,7 @@ var veganValue = searchParams.veganValue;
 seqConnection.query('SET FOREIGN_KEY_CHECKS = 0')
 
 
-// SEARCH FOR 10 RECIPES -
+// SEARCH FOR RECIPES -
 unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search?limitLicense=false&number=10&offset=0&query=" + searchTerm + "&type=main+course")
 .header("X-Mashape-Key", "1pb1awVrWQmsh5cGX7uf2JqubVkIp1ibFl8jsnOPSRyTSkfXtR")
 .end(function (result) {
